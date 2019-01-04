@@ -1,0 +1,51 @@
+/* ========== Reset and Base Css Strat ========== */
+html{ color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td { margin:0px; padding:0px;}
+fieldset,img { border:0;}
+/* TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit... */
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+/* TODO Figure out where this list-style rule is best set. Hedger has a request to investigate. */
+blockquote,ul,ol,dl {margin:0px;}
+h1,h2,h3,h4,h5,h6 { margin:0px; padding:0px;}
+h1,h2,h3,h4,h5,h6,strong {font-weight:bold;}
+abbr,acronym { border-bottom:1px dotted #000;cursor:help;} 
+em {font-style:italic;}
+th { font-weight:bold; text-align:center;}
+caption { margin-bottom:.5em; text-align:center;}
+p,fieldset,table,pre {}
+input[type=text],input[type=password],textarea{}
+input{ margin:0px; padding:0px; background:none; border:0px;}
+ul{ list-style:none; margin:0px; padding:0px;}
+li { list-style:none; margin:0px; padding:0px;}
+ol,ul,dl { margin:0px; padding:0px; margin:0px; padding:0px;}
+ol li {	list-style: decimal outside;}
+ul li {	list-style:none; margin:0px; padding:0px;}
+dl dd {	margin-left:0px;}
+caption, th { text-align:left;}
+abbr,acronym { border:0; font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {}
+sub { vertical-align:text-bottom;}
+input,textarea,select { font-family:inherit; font-size:inherit; font-weight:inherit;}
+/*to enable resizing for IE*/
+input, textarea, select { }
+/*because legend doesn't inherit in IE */
+legend { color:#000;}
+/* ========== Reset and Base Css End ========== */
+/* ========== Fonts Css Strat ========== */
+body,select,input,button,textarea,pre,code,kbd,samp,tt {font-family: 'Open Sans', sans-serif;}
+ body{ font-size:14px; color:#686868; font-weight: 400;}
+/* ========== Fonts Css End ========== */
+/* ========== Accordion menu Css Strat ========== */
+.sidemenu{}
+.sidemenu .accordion li{ background:#cd7e30; color:#fff; border-bottom:#fff solid 1px; font-weight:600;}
+.sidemenu .accordion li a{ padding:6px 18px; display:block; color:#000000; cursor:pointer;}
+.sidemenu .accordion li li{ background:url(../images/left_accordion_sub_line.jpg) no-repeat 5px 14px #000000; border-color:#363636;}
+.sidemenu .accordion li li a{ color:#ffffff;}
+.sidemenu .accordion li li.active{ background:url(../images/left_accordion_sub_line.jpg) no-repeat 5px 14px #171717;}
+.sidemenu .accordion li li ul{ padding:0px 0px 5px 18px;}
+.sidemenu .accordion li li li, .sidemenu .accordion li li.active li.active{ border-bottom:none; background:#171717; font-weight:400; background:url(../images/left_accordion_line.jpg) repeat-y left top;}
+.sidemenu .accordion li li li:first-child{ background:url(../images/left_accordion_first_li.jpg) no-repeat left top;}
+.sidemenu .accordion li li li:last-child{ background:url(../images/left_accordion_last_li.jpg) no-repeat left top;}
+.sidemenu .accordion li li li a{ padding:3px 15px; background:url(../images/left_accordion_sub_line.jpg) no-repeat left center;}
+/* ========== Accordion menu Css End ========== */

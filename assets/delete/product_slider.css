@@ -1,0 +1,46 @@
+.commn_arrow .slick-slide{ margin-right: 30px;}
+.commn_arrow .slick-active{ opacity: 1;}
+.commn_arrow .slick-prev::before, .commn_arrow .slick-next::before{ font-size: 0px;}
+.commn_arrow .slick-arrow{ position: absolute; z-index: 999; top: -30px; font-size: 0px; width: 40px; height: 19px;}
+.commn_arrow .slick-arrow.slick-prev{ right: 90px; left: auto; background: url(../images/arrow_left.png) no-repeat left top;}
+.commn_arrow .slick-arrow.slick-next{ right: 30px; background: url(../images/arrow_right.png) no-repeat left top;}
+.commn_arrow .slick-arrow.slick-prev:hover{ background-image:url(../images/arrow_left_hover.png);}
+.commn_arrow .slick-arrow.slick-next:hover{ background-image:url(../images/arrow_right_hover.png);}
+.commn_arrow .slick-prev:before, .banner_area .slick-next:before{ font-size: 0px;}
+.commn_arrow .slick-dots{ display: none!important;}
+.commn_arrow .slick-slide img{ width: auto; max-width: 100%; margin: 0px auto;}
+.hm_product{ padding-bottom: 40px;}
+
+.box2{ position: relative;}
+.img_box2{ margin-bottom: 30px;}
+.img_box2 img{ max-width: 100%;}
+.text_box2 h2{ font-size: 15px; color: #000000; font-weight: 400;}
+.text_box2 h2 span{ color: #898989; display: block; padding-bottom: 13px;}
+.text_box2 h2 span i{ font-style: normal; color: #2AA0FB;}
+/* ------ Responsive css ------ */
+@media screen and (max-width: 1000px){
+    .hm_product_area{ padding: 50px 0px;}
+    .commn_arrow .slick-arrow.slick-next{ right: 20px;}
+    .commn_arrow .slick-arrow.slick-prev{ right: 74px;}
+}
+@media screen and (max-width: 767px){
+    .commn_arrow .slick-arrow{ top: auto; bottom: -40px;}
+    .commn_arrow .slick-arrow.slick-next{ right: 42%;}
+    .commn_arrow .slick-arrow.slick-prev{ right: 52%;}
+}
+@media screen and (max-width: 676px){
+    .hm_product_area{ padding: 40px 0px;}
+}
+@media screen and (max-width: 470px){
+    .hm_product_area .slick-slide{ margin-right: 0px; text-align: center;}
+    .hm_product_area{ padding: 40px 0px;}
+    .img_box2{ margin-bottom: 15px;}
+    .text_box2 h2 span{ padding-bottom: 8px;}
+    .commn_arrow .slick-arrow.slick-next{ right: 38%;}
+    .commn_arrow .slick-arrow.slick-prev{ right: 53%;}
+}
+@media screen and (max-width: 330px){
+    .commn_arrow .slick-arrow.slick-next{ right: 33%;}
+    .commn_arrow .slick-arrow.slick-prev{ right: 54%;}
+
+}

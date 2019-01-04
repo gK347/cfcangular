@@ -1,0 +1,88 @@
+
+
+.banner_area{ position: relative; color: #fff; overflow: hidden;}
+.hm_banner{ position: relative; z-index: 1;}
+.banner_box{ position: relative;}
+.banner_img{ position: relative; z-index: 1;}
+.temp{ position: absolute; z-index: 2; left: 0px; top: 19%; width: 100%;}
+.banner_area h1{ font-size: 55px; font-weight: 800; padding-bottom: 20px;}
+.banner_area .tital_h1 .hd_line{ background: #fff;}
+.banner_area p{font-family: 'Open Sans', sans-serif;color: #FFFFFF;font-size: 20px; padding-bottom: 0px;}
+.banner_area .btn_read_more{ padding-top: 50px;}
+.banner_area .slick-slide {transition: all ease-in-out .3s; opacity: 1; position:relative; }
+.banner_area .slick-slide .temp{transition: all ease-in-out .8s; z-index:999; position:absolute; top:-10%; opacity: 0;}
+.banner_area .slick-slide.slick-current .temp{transition: all ease-in-out .8s;top:30%; opacity: 1;}
+.banner_area .slick-arrow{ position: absolute; z-index: 999; bottom: 30px; top: auto; font-size: 30px; width: 40px; height: 19px;}
+
+.banner_area .slick-slide .temp{text-align: center;}
+.banner_area .slick-slide .temp h1{font-size: 60px;font-family: 'Roboto Slab', serif!important;line-height: 56px;}
+
+
+/*
+.banner_area .slick-arrow.slick-prev{ left: 50px!important;height:30px;background: url(../images/arrow_left.png) no-repeat left top;top:50%;}
+.banner_area .slick-arrow.slick-next{ right: 50px;height:30px; background: url(../images/arrow_right.png) no-repeat left top;top:50%;}
+*/
+
+.banner_area .slick-arrow.slick-next{background: url(../images/arrow_right.png) no-repeat;right: 4%;font-size:0;position:absolute;border:0;width:16px;height:27px;z-index:2;top:0;bottom:0;margin:auto;}
+
+.banner_area .slick-arrow.slick-prev {background: url(../images/arrow_left.png) no-repeat;left: 4%;font-size:0;position:absolute;border:0;width:16px;height:27px;z-index:2;top:0;bottom:0;margin:auto;}
+
+/*
+.banner_area .slick-arrow.slick-prev:hover{ background-image:url(../images/arrow_left.png);}
+.banner_area .slick-arrow.slick-next:hover{ background-image:url(../images/arrow_right.png);}
+*/
+.banner_area .slick-prev:before, .banner_area .slick-next:before{ font-size: 0px;}
+.banner_area .slick-dots{ display: none!important;}
+
+
+
+/* ------ Responsive css ------ */
+@media screen and (max-width: 1024px){
+    .banner_area .slick-slide .temp{ top: -10%;}
+    .banner_area .slick-slide.slick-current .temp{ top: 25%;}
+    .banner_area .slick-slide .temp h1{font-size: 50px;line-height: 50px;}
+}
+@media screen and (max-width: 1000px){
+    .banner_area h1{ font-size: 40px; margin-bottom: 0px; padding-bottom: 15px;}
+    .banner_area .btn_read_more{ padding-top: 26px;}
+/*
+    .banner_area .slick-arrow.slick-next{ right: 10px;}
+    .banner_area .slick-arrow.slick-prev{ right: 60px;}
+*/
+    .banner_area .slick-arrow{ bottom: 15px;}  
+    .max_with_set1{ max-width: 96%; margin: 0px auto; float: none;}
+    .banner_area .slick-slide .temp h1{font-size: 40px;line-height: 40px;}
+    .banner_area p{font-size: 18px;}
+}
+@media screen and (max-width: 767px){
+    
+   .banner_area .slick-arrow.slick-prev,.banner_area .slick-arrow.slick-next{    bottom: 0;
+    top: 0;
+    margin: auto;background-size: 13px!important;}
+    
+    .banner_area .container{ width: 100%; max-width: 100%;} 
+     .banner_area .slick-slide .temp h1{font-size: 30px;line-height: 30px;}
+    .banner_area .slick-slide.slick-current .temp{ top: 20%;}
+}
+@media screen and (max-width: 676px){
+    .banner_area p{ display: none;}
+    .banner_area .btn_read_more{ display: none;}
+    .banner_area .slick-slide .temp{ top: -10%;}
+    .banner_area .slick-slide.slick-current .temp{ top: 35%;}    
+}
+@media screen and (max-width: 480px){
+    .banner_area h1{ font-size: 25px;}
+    .banner_area table tr td:first-child{ width: 58px; padding-right: 10px; padding-top: 15px;}
+     .banner_area .slick-arrow{ background-size: 30px!important; width: 30px;}
+/*    .banner_area .slick-arrow.slick-prev{ right: 53px;}*/
+    .banner_area .slick-arrow{ bottom: 8px; height: 15px;}
+    
+    .banner_area .slick-slide .temp h1{font-size: 18px;line-height: 20px;}
+    
+}
+@media screen and (max-width: 400px){
+    .banner_area h1{ font-size: 22px;}
+}
+@media screen and (max-width: 360px){
+    .banner_area h1{ font-size: 18px;}    
+}
